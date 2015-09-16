@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="uk-ua">
+<head>
+      <meta http-equiv="content-type" content="text/html; charset=utf-8" name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Книшук Анатолій Олексійович - Вінницький академічний музично-драматичний театр</title>
+      <link rel="shortcut icon" href="/favicon.png">
+<!-- CSS -->
+      <link href="/css/bootstrap.css" rel="stylesheet">
+      <link href="/css/main.css" rel="stylesheet">
+      <link href="/css/media.css" rel="stylesheet">
+<!-- Google fonts -->
+      <link href='http://fonts.googleapis.com/css?family=Philosopher&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+      <link href='http://fonts.googleapis.com/css?family=PT+Sans&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+<!-- JS -->
+      <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+<!--[if lt IE 9]>
+      <script src="js/respond.min.js"></script>
+      <script src="js/html5shiv-printshiv.min.js"></script>
+<![endif]-->
+
+<!-- mobile logo -->
+<script>
+  $(document).ready(function(){
+    var logo = $('#logo');
+    var wid = $(window).width();
+    if (wid < 480) {
+        logo.attr("src","/img/logo_small.png");
+    }
+    if (wid >= 480) {
+       logo.attr("src","/img/logo.png");
+    } 
+});
+</script>
+<!-- mobile menu -->
+<script>
+$(document).ready(function() {
+  var touch = $('#touch-menu');
+  var nav = $('nav');
+  var slider = $('.col-md-12');
+  var wid = $(window).width();
+  var mrg = nav.height()+ 5;
+  $(touch).click(function() {  
+    if (nav.is(':hidden')) {
+      nav.slideDown("slow");
+      slider.css("margin-top", mrg);
+    }
+    else {
+      nav.slideUp("slow");
+      slider.animate({ top: '0'}, 1000);
+      slider.css("margin-top", "0px");;
+    }
+  $(window).resize(function(){
+    if (wid > 766 && nav.is(':hidden')){
+      nav.removeAttr('style');
+      slider.css("margin-top", "0px");;       
+    }
+    });
+  });
+});
+</script>
+</head>
+
+<body>
+<div class="container">
+
+<header>
+  <a href="/index.html"><img id="logo" src="img/logo.png" alt="Головна сторінка"></a>
+  <a href="#" id="touch-menu">Меню</a>
+  <nav>
+    <ul>
+        <li><a href="/afisha0915.html">Афіша</a></li>
+        <li><a href="/rehpehrtuar-osnovna-scena.html">Репертуар</a></li>
+        <li><a id="current" href="/aktory.html">Люди</a></li>
+        <li><a href="/pro-teatr.html">Про театр</a></li>
+        <li><a href="/kontakty.html">Контакти</a></li>
+    </ul>
+  </nav>
+</header>
+
+<article class="row">
+  <div class="col-md-12">
+    <h1 id="heading"></h1>    
+    <div class="inline-hovers">
+      <ul>
+        <li><a id="current" href="/aktory.html">Актори</a></li>      
+        <li><a href="/tvorcheh-kehrivnyctvo.html">Творче керівництво</a></li>      
+        <li><a href="/administraciya.html">Адміністративне керівництво</a></li>
+    </ul>
+    </div>
+  </div> 
+    <h1>Книшук Анатолій Олексійович</h1>  
+    <p id="center">заслужений артист України</p>  
+    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 actor">
+      <img src="/img/actors/knyshuk.jpg" alt="Книшук Анатолій Олексійович">
+      <p id="red-line">Творчу діяльність розпочав у Полтавському музично-драматичному театрі після навчання у театральній студії при Національному академічному театрі ім. І.Франка (артист драматичного театру) 1973р. Згодом довгі роки служив у Черкаському академічному музично-драматичному театрі ім. Т.Г.Шевченка.
+З 2007 р. - актор драми Вінницького театру. Наділений широким творчим діапазоном.
+ Серед останніх робіт актора - Бернард у комедії «Bon appe'tit, або Гарнір по-французьки», Жорж у мелодраматичній виставі «Жахливі батьки», Скенлон у виставі «Політ над гніздом зозулі» , Крутицький - у комедії О.Островського "Так виходять у люди", Хлопов - у сатиричній комедії М.Гоголя  "Ревізор" та ін.
+Образи, створені Анатолієм Олексійовичем, щирі, наділені глибоко психологічними природними характерами.</p>
+    </div>
+    
+</article> <!--  @end row -->
+</div> <!-- @end container-->
+
+<footer>
+  <div class="navbar-inner">
+    <div class="container">
+      <div class="pull-left">
+        <p>Copyright © 2015 Вінницький обласний музично-драматичний театр. <br>Всі права захищені (All rights reserved).</p>
+        <p>Адреса: м. Вінниця, вул. Театральна, 13.</p>
+        <p>Каси театру: тел. +38(0432) 111-22-33, +38(50) 555-66-77</p>
+        <p>Електронна адреса: <a href="mailto:info@teater.vn.ua">info@teater.vn.ua</a></p>
+      </div><!-- @end pull-left-->
+      <div class="pull-right social-links">
+        <ul>
+          <li>
+            <a href="https://www.facebook.com"><img src="/img/icons/facebook.png" alt="facebook" onmouseover="this.src='/img/icons/facebook_hover.png'" onmouseout="this.src='/img/icons/facebook.png'
+          "></a>
+          </li>
+          <li>
+            <a href="http://www.vk.com"><img src="/img/icons/vk.png" alt="vk" onmouseover="this.src='/img/icons/vk_hover.png'" onmouseout="this.src='/img/icons/vk.png'
+          "></a>
+          </li>      
+          <li>
+            <a href="http://www.youtube.com"><img src="/img/icons/youtube.png" alt="youtube" onmouseover="this.src='/img/icons/youtube_hover.png'" onmouseout="this.src='/img/icons/youtube.png'
+          "></a>
+          </li>      
+        </ul>
+        <p>Розробка сайту: <a href="mailto:darinazhuchenko@gmail.com">Жученко Дарина</a></p>  
+      </div><!-- @end pull-right-->
+    </div><!-- @end container-->
+  </div><!-- @end navbar-inner-->
+</footer>
+</body>
+</html>
+
+
