@@ -19,45 +19,39 @@
 <![endif]-->
 
 <!-- mobile logo -->
-<script>
-  $(document).ready(function(){
-    var logo = $('#logo');
-    var wid = $(window).width();
-    if (wid < 480) {
-        logo.attr("src","/img/logo_small.png");
-    }
-    if (wid >= 480) {
-       logo.attr("src","/img/logo.png");
-    } 
-});
-</script>
+      <script>
+              $(document).ready(function(){
+                var logo = $('#logo');
+                var wid = $(window).width();
+                if (wid < 480) {
+                    logo.attr("src","/img/logo_small.png");
+                }
+                if (wid >= 480) {
+                   logo.attr("src","/img/logo.png");
+                } 
+            });
+      </script>
 <!-- mobile menu -->
-<script>
-$(document).ready(function() {
-  var touch = $('#touch-menu');
-  var nav = $('nav');
-  var slider = $('.col-md-12');
-  var wid = $(window).width();
-  var mrg = nav.height()+ 5;
-  $(touch).click(function() {  
-    if (nav.is(':hidden')) {
-      nav.slideDown("slow");
-      slider.css("margin-top", mrg);
-    }
-    else {
-      nav.slideUp("slow");
-      slider.animate({ top: '0'}, 1000);
-      slider.css("margin-top", "0px");;
-    }
-  $(window).resize(function(){
-    if (wid > 766 && nav.is(':hidden')){
-      nav.removeAttr('style');
-      slider.css("margin-top", "0px");;       
-    }
-    });
-  });
-});
-</script>
+      <script>
+            $(document).ready(function() {
+              var touch = $('#touch-menu');
+              var nav = $('nav');
+              var wid = $(window).width();
+              $(touch).click(function() {  
+                if (nav.is(':hidden')) {
+                  nav.slideDown("slow");
+                }
+                else {
+                  nav.slideUp("slow");
+                }
+              $(window).resize(function(){
+                if (wid > 766 && nav.is(':hidden')){
+                  nav.removeAttr('style');   
+                }
+                });
+              });
+            });
+      </script>
 </head>
 
 <body>
