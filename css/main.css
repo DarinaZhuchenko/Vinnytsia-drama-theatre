@@ -216,18 +216,18 @@ div.people img, div.actor img { /*картина и текст в одну ст�
 	margin: 10px;
 }
 .responsive { 
-  height: 0; 
-  position: relative; 
-  overflow: hidden; 
-  padding-bottom: 56.25%; 
+	height: 0; 
+	position: relative; 
+	overflow: hidden; 
+	padding-bottom: 56.25%; 
 } 
 .responsive iframe {
-  position: absolute; 
-  top: 0; 
-  left: 0; 
-  width: 100%;
-  height: 100%; 
-  padding: 20px 0;
+	position: absolute; 
+	top: 0; 
+	left: 0; 
+	width: 100%;
+	height: 100%; 
+	padding: 20px 0;
 }
 
 /*---------- footer ----------*/
